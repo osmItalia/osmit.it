@@ -1,4 +1,5 @@
 export default {
+    siteTitle: 'OSM Italia',
     headerGradientOverlay: `linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.6))`,
     osmTitle: 'OpenStreetMap',
     osmDescription: '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>', // supports HTML

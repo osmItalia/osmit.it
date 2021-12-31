@@ -3,7 +3,7 @@ import * as React from "react"
 import { BgImage } from "gbimage-bridge"
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 import HTMLRenderer from "react-html-renderer"
-
+import Helmet from "react-helmet";
 import { graphql } from 'gatsby';
 
 import Map from '../components/map';
@@ -26,6 +26,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
+      <Helmet title={config.siteTitle} defer={false} />
       <BgImage
         Tag="header"
         className="py-12"

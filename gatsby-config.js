@@ -18,5 +18,17 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `OSM Italia`,
+        short_name: `OSMIT`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#00a9b2`,
+        display: `standalone`,
+        icon: `src/images/OSMItaly.svg`
+      },
+    },
   ],
 };
