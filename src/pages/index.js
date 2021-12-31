@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
   const image = getImage(placeholderImage)
 
   const stack = [
-    `linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.6))`,
+    config.headerGradientOverlay,
     image,
   ]
 
@@ -35,8 +35,25 @@ const IndexPage = ({ data }) => {
       >
         <div className="max-w-6xl p-2 mx-auto md:p-4 flex">
           <div className="flex">
-            <StaticImage className="mr-5" alt="logo Wikimedia" src="../images/WIKIItaly.png" width={70} height={70} layout="fixed" loading="eager" placeholder="blurred"/>
-            <StaticImage alt="logo OSM Italia" src="../images/OSMItaly.svg" width={70} height={70} layout="fixed" loading="eager" placeholder="blurred" />
+            <StaticImage 
+              className="mr-5" 
+              alt="logo Wikimedia" 
+              src="../images/WIKIItaly.png" 
+              width={70} 
+              height={70} 
+              layout="fixed" 
+              loading="eager" 
+              placeholder="blurred"
+            />
+            <StaticImage 
+              alt="logo OSM Italia" 
+              src="../images/OSMItaly.svg" 
+              width={70} 
+              height={70} 
+              layout="fixed" 
+              loading="eager" 
+              placeholder="blurred" 
+            />
           </div>
           <div className="ml-auto font-bold self-center uppercase">
             <a className="mx-2" href="#">Home</a>
@@ -48,7 +65,16 @@ const IndexPage = ({ data }) => {
       </BgImage>
       <main className="max-w-6xl p-2 mx-auto md:p-4">
         <section className="my-10">
-          <h2 className="text-3xl flex mb-2 font-bold"><StaticImage loading="eager" alt="" className="mr-5" src="../images/osm.svg" width={50} layout="fixed" />{config.osmTitle}</h2>
+          <h2 className="text-3xl flex mb-2 font-bold">
+            <StaticImage 
+              loading="eager" 
+              alt="" 
+              className="mr-5" 
+              src="../images/osm.svg" 
+              width={50} 
+              layout="fixed" 
+            />{config.osmTitle}
+          </h2>
           <hr />
           <div className="prose lg:prose-lg mt-5 max-w-full mb-5">
             <HTMLRenderer html={config.osmDescription} />
@@ -56,15 +82,33 @@ const IndexPage = ({ data }) => {
           <Map />
         </section>
         <section className="my-10" id="chisiamo">
-          <h2 className="text-3xl flex mb-2 font-bold"><StaticImage alt="" className="mr-5" src="../images/osm.svg" width={50} layout="fixed" />{config.osmItalyTitle}</h2>
+          <h2 className="text-3xl flex mb-2 font-bold">
+            <StaticImage 
+              alt="" 
+              className="mr-5" 
+              src="../images/osm.svg" 
+              width={50} layout="fixed" 
+            />{config.osmItalyTitle}</h2>
           <hr />
           <div className="prose lg:prose-lg mt-5 max-w-full">
             <HTMLRenderer html={config.osmItalyDescription} />
           </div>
-          <StaticImage src="../images/image.png" layout="fullWidth" className="mx-auto mt-5 mx-10" />
+          <StaticImage 
+            src="../images/image.png" 
+            layout="fullWidth" 
+            className="mx-auto mt-5 mx-10" 
+          />
         </section>
         <section id="progetti" className="mb-10">
-          <h2 className="text-3xl flex mb-2 font-bold"><StaticImage alt="" className="mr-5" src="../images/osm.svg" width={50} layout="fixed" />Progetti</h2>
+          <h2 className="text-3xl flex mb-2 font-bold">
+            <StaticImage 
+              alt="" 
+              className="mr-5" 
+              src="../images/osm.svg" 
+              width={50} 
+              layout="fixed" 
+            />Progetti
+          </h2>
           <hr />
           <div className="prose lg:prose-lg mt-5 max-w-full mb-5">
             <HTMLRenderer html={config.projectsDescription} />
@@ -89,8 +133,14 @@ const IndexPage = ({ data }) => {
             <HTMLRenderer html={config.contactDescription} />
           </div>
           <div className="flex gap-4 items-center mt-5">
-            {config.github && <a href={config.github.url} target="blank" className="flex gap-2"><GitHub />{config.github.text}</a>}
-            {config.facebook && <a href={config.facebook.url} target="blank" className="flex gap-2"><Facebook />{config.facebook.text}</a>}
+            {config.github && (
+              <a href={config.github.url} target="blank" className="flex gap-2">
+                <GitHub />{config.github.text}
+              </a>)}
+            {config.facebook && (
+              <a href={config.facebook.url} target="blank" className="flex gap-2">
+                <Facebook />{config.facebook.text}
+              </a>)}
           </div>
         </section>
       </main>
