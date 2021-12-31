@@ -7,11 +7,6 @@ import config from '../config';
 const { BaseLayer } = LayersControl
 
 export default function Map() {
-
-    if (typeof window === 'undefined') {
-        return null;
-    }
-    
     return (
         <div>
             <MapContainer center={config.center} zoom={config.zoom} scrollWheelZoom={false}>

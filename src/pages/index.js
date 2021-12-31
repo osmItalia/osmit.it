@@ -5,12 +5,11 @@ import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 import HTMLRenderer from "react-html-renderer"
 import Helmet from "react-helmet";
 import { graphql } from 'gatsby';
-
-import Map from '../components/map';
-
+import loadable from '@loadable/component';
 import config from '../config';
 import { Facebook, GitHub } from "react-feather";
 
+const Map = loadable(() => import("../components/map"));
 
 const IndexPage = ({ data }) => {
   const imageMap = data.allFile.edges.map(e => ({ [e.node.name]: getImage(e.node) }))
