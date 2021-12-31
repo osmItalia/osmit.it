@@ -1,7 +1,6 @@
 import * as React from "react"
 
-import { BgImage, convertToBgImage } from "gbimage-bridge"
-import BackgroundImage from 'gatsby-background-image'
+import { BgImage } from "gbimage-bridge"
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 import HTMLRenderer from "react-html-renderer"
 
