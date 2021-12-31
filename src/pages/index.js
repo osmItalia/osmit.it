@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
                 <div>
                   <p className="text-lg font-bold">{p.name}</p>
                   <p className="mb-5">{p.description}</p>
-                  <a href={p.link} className="mt-1 px-3 py-2 bg-red-500 rounded">Vai</a>
+                  <a href={p.link} className="mt-1 px-3 py-2 bg-first rounded">Vai</a>
                 </div>
               </div>
             ))}
