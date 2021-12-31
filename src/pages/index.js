@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import { BgImage, convertToBgImage } from "gbimage-bridge"
+import BackgroundImage from 'gatsby-background-image'
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 import HTMLRenderer from "react-html-renderer"
 
@@ -12,28 +14,38 @@ import { Facebook, GitHub } from "react-feather";
 
 
 const IndexPage = ({ data }) => {
-  console.log(data);
-
   const imageMap = data.allFile.edges.map(e => ({ [e.node.name]: getImage(e.node) }))
     .reduce((p,c) => Object.assign(p,c), {})
 
-  console.log(imageMap);
+  const { placeholderImage } = data
+  const image = getImage(placeholderImage)
+
+  const stack = [
+    `linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.6))`,
+    image,
+  ]
+
   return (
     <>
-      <header className="bg-black py-5">
+      <BgImage
+        Tag="header"
+        className="py-12"
+        image={stack}
+        preserveStackingContext
+      >
         <div className="max-w-6xl p-2 mx-auto md:p-4 flex">
           <div className="flex">
-            <StaticImage className="mr-5" alt="logo Wikimedia" src="../images/WIKIItaly.png" width={50} height={50} layout="fixed" loading="eager" />
-            <StaticImage alt="logo OSM Italia" src="../images/OSMItaly.svg" width={50} height={50} layout="fixed" loading="eager" />
+            <StaticImage className="mr-5" alt="logo Wikimedia" src="../images/WIKIItaly.png" width={70} height={70} layout="fixed" loading="eager" placeholder="blurred"/>
+            <StaticImage alt="logo OSM Italia" src="../images/OSMItaly.svg" width={70} height={70} layout="fixed" loading="eager" placeholder="blurred" />
           </div>
-          <div className="ml-auto text-white self-center uppercase">
+          <div className="ml-auto font-bold self-center uppercase">
             <a className="mx-2" href="#">Home</a>
             <a className="mx-2" href="#chisiamo">Chi Siamo</a>
             <a className="mx-2" href="#progetti">Progetti</a>
             <a className="mx-2" href="#contatti">Contatti</a>
           </div>
         </div>
-      </header>
+      </BgImage>
       <main className="max-w-6xl p-2 mx-auto md:p-4">
         <section className="my-10">
           <h2 className="text-3xl flex mb-2 font-bold"><StaticImage loading="eager" alt="" className="mr-5" src="../images/osm.svg" width={50} layout="fixed" />{config.osmTitle}</h2>
@@ -109,6 +121,15 @@ export const indexQuery = graphql`
             )
           }
         }
+      }
+    }
+    placeholderImage: file(relativePath: { eq: "banner.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
       }
     }
   }
