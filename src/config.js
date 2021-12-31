@@ -6,6 +6,10 @@ export default {
     center: [51.505, -0.09],
     zoom: 13,
     layers: [
+        /* 
+            Only the active layer must be set as `checked: true`
+            all the others MUST use `checked: false`
+        */
         {
             checked: true,
             name: 'OSM',
@@ -14,6 +18,11 @@ export default {
         }
     ],
     projects: [
+        /*
+            Images of projects MUST be placed inside the image/projects folder.
+            It's recommended to keep the filename simple and without spaces or special characters (replace space with _).
+            When configuring a project specify the filename without extension.
+        */
         {
             image: 'icon',
             name: 'Progetto di esempio',
