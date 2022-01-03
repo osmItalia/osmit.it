@@ -7,7 +7,7 @@ import Helmet from "react-helmet";
 import { graphql } from 'gatsby';
 import loadable from '@loadable/component';
 import config from '../config';
-import { Facebook, GitHub } from "react-feather";
+import { Facebook, GitHub, Twitter } from "react-feather";
 
 const Map = loadable(() => import("../components/map"));
 
@@ -72,6 +72,7 @@ const IndexPage = ({ data }) => {
               src="../images/osm.svg" 
               width={50} 
               layout="fixed" 
+              placeholder="blurred"
             />{config.osmTitle}
           </h2>
           <hr />
@@ -85,17 +86,20 @@ const IndexPage = ({ data }) => {
             <StaticImage 
               alt="" 
               className="mr-5" 
-              src="../images/osm.svg" 
-              width={50} layout="fixed" 
+              src="../images/OSMItaly.svg" 
+              width={50} 
+              layout="fixed" 
+              placeholder="blurred"
             />{config.osmItalyTitle}</h2>
           <hr />
           <div className="prose lg:prose-lg mt-5 max-w-full">
             <HTMLRenderer html={config.osmItalyDescription} />
           </div>
           <StaticImage 
-            src="../images/image.png" 
+            src="../images/image.jpeg" 
             layout="fullWidth" 
-            className="mx-auto mt-5 mx-10" 
+            className="mx-auto mt-5 mx-10"
+            placeholder="blurred"
           />
         </section>
         <section id="progetti" className="mb-10">
@@ -105,7 +109,8 @@ const IndexPage = ({ data }) => {
               className="mr-5" 
               src="../images/osm.svg" 
               width={50} 
-              layout="fixed" 
+              layout="fixed"
+              placeholder="blurred"
             />Progetti
           </h2>
           <hr />
@@ -139,6 +144,10 @@ const IndexPage = ({ data }) => {
             {config.facebook && (
               <a href={config.facebook.url} target="blank" className="flex gap-2">
                 <Facebook />{config.facebook.text}
+              </a>)}
+            {config.twitter && (
+              <a href={config.twitter.url} target="blank" className="flex gap-2">
+                <Twitter />{config.twitter.text}
               </a>)}
           </div>
         </section>

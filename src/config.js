@@ -60,11 +60,15 @@ export default {
     contactDescription: '', // supports HTML
     contactTitle: 'Contatti',
     github: {
-        url: 'https://google.com',
-        text: 'Visita GitHub'
+        url: 'https://github.com/osmItalia/',
+        text: ''
     },
     facebook: {
-        url: 'https://google.com',
+        url: 'https://it-it.facebook.com/OpenStreetMap.Italia/',
+        text: ''
+    },
+    twitter: {
+        url: 'https://twitter.com/OpenStreetMapIt',
         text: ''
     }
 }
