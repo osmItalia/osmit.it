@@ -2,9 +2,9 @@ export default {
     siteTitle: 'OSM Italia',
     headerGradientOverlay: `linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.6))`,
     osmTitle: 'OpenStreetMap',
-    osmDescription: '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>', // supports HTML
+    osmDescription: '<p>OpenStreetMap (OSM) è un progetto che coinvolge volontari da tutto il mondo nella creazione ed aggiornamento di una mappa del mondo, disponibile a tutti gratuitamente e con una licenza aperta. Il progetto promuove qualsiasi utilizzo di questa mappa e dei dati che la compongono.</p>', // supports HTML
     osmItalyTitle: 'OpenStreetMap Italia',
-    osmItalyDescription: '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>', // supports HTML
+    osmItalyDescription: '<p>OpenStreetMap Italia è la comunità italiana del progetto OpenStreetMap, coordinata da <a href="https://www.wikimedia.it/">Wikimedia Italia</a> che è il capitolo ufficiale italiano della <a href="https://wiki.osmfoundation.org/wiki/Main_Page">OpenStreetMap Foundation</a>. La comunità italiana è particolarmente attiva non soltanto nel mantenere la mappa di OpenStreetMap aggiornata, ma anche nell\'organizzare eventi di formazione, divulgazione e condivisione. La comunità italiana si riunisce annualmente nella conferenza dedicata a OpenStreetMap Italia, intitolata <i>OSMit</i> dal 2010 fino al 2016 e successivamente incorporata nel convegno <i>FOSS4G-IT</i>, che riunisce tutte le comunità italiane del software geografico libero e dei dati geografici aperti.</p>', // supports HTML
     center: [51.505, -0.09],
     zoom: 13,
     layers: [
