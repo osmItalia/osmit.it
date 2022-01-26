@@ -128,7 +128,7 @@ const IndexPage = ({ data }) => {
           <div className="mt-4">
             <iframe 
               src="https://openstreetmap.community/?map=44.34666,13.10985&zoom=5.00"
-              className="w-full h-96"  
+              className="w-full h-[50rem]"  
             ></iframe>
           </div>
         </section>
