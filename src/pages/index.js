@@ -1,27 +1,19 @@
 import * as React from "react"
 
-import { BgImage } from "gbimage-bridge"
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 import HTMLRenderer from "react-html-renderer"
 import Helmet from "react-helmet";
 import { graphql } from 'gatsby';
 import loadable from '@loadable/component';
+import ResponsiveEmbed from "react-responsive-embed";
+
 import config from '../config';
-import { Facebook, GitHub, Twitter } from "react-feather";
 
 const Map = loadable(() => import("../components/map"));
 
 const IndexPage = ({ data }) => {
   const imageMap = data.allFile.edges.map(e => ({ [e.node.name]: getImage(e.node) }))
     .reduce((p,c) => Object.assign(p,c), {})
-
-  const { placeholderImage } = data
-  const image = getImage(placeholderImage)
-
-  const stack = [
-    config.headerGradientOverlay,
-    image,
-  ]
 
   return (
     <>
@@ -126,10 +118,9 @@ const IndexPage = ({ data }) => {
         <h2 className="text-3xl font-bold mb-2">{config.contactTitle}</h2>
           <hr />
           <div className="mt-4">
-            <iframe 
+            <ResponsiveEmbed 
               src="https://openstreetmap.community/?map=44.34666,13.10985&zoom=5.00"
-              className="w-full h-[50rem]"  
-            ></iframe>
+            ></ResponsiveEmbed>
           </div>
         </section>
       </main>
@@ -160,15 +151,6 @@ export const indexQuery = graphql`
             )
           }
         }
-      }
-    }
-    placeholderImage: file(relativePath: { eq: "banner.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FULL_WIDTH
-          placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF]
-        )
       }
     }
   }
