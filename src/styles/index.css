@@ -11,3 +11,7 @@
 body {
     @apply text-blackLogo;
 }
+
+section {
+    scroll-margin-top: 8rem;
+}
