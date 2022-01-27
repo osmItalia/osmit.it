@@ -33,6 +33,16 @@ const IndexPage = ({ data }) => {
               loading="eager" 
               placeholder="blurred" 
             />
+            <StaticImage 
+              loading="eager" 
+              alt="" 
+              className="mr-5" 
+              src="../images/WIKIItaly.png" 
+              width={50}
+              height={50}
+              layout="fixed" 
+              placeholder="blurred"
+            />
             <div className="ml-1 font-bold text-xl">OpenStreetMap Italia</div>
           </div>
           <div className="ml-auto font-bold self-center uppercase">
@@ -55,7 +65,8 @@ const IndexPage = ({ data }) => {
               width={50} 
               layout="fixed" 
               placeholder="blurred"
-            />{config.osmTitle}
+            />
+            {config.osmTitle}
           </h2>
           <hr />
           <div className="prose lg:prose-lg mt-5 max-w-full mb-5">
