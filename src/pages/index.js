@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 import { graphql } from 'gatsby';
 import loadable from '@loadable/component';
 import ResponsiveEmbed from "react-responsive-embed";
+import ReactMarkdown from 'react-markdown';
 
 import config from '../config';
 
@@ -35,7 +36,7 @@ const IndexPage = ({ data }) => {
             <div className="ml-1 font-bold text-xl">OpenStreetMap Italia</div>
           </div>
           <div className="ml-auto font-bold self-center uppercase">
-            <a className="mx-2" href="#">Home</a>
+            <a className="mx-2" href="#home">Home</a>
             <a className="mx-2" href="#chisiamo">Chi Siamo</a>
             <a className="mx-2" href="#progetti">Strumenti</a>
             <a className="mx-2" href="#contatti">Contatti</a>
@@ -44,7 +45,7 @@ const IndexPage = ({ data }) => {
         </div>
       </header>
       <main className="max-w-6xl p-2 mx-auto md:p-4">
-        <section className="my-10">
+        <section className="my-10" id="home">
           <h2 className="text-3xl flex mb-2 font-bold">
             <StaticImage 
               loading="eager" 
@@ -103,12 +104,12 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-5">
             {config.projects.map(p => (
-              <div className="flex gap-4" key={p.name}>
+              <div className="grid grid-cols-3 gap-4" key={p.name}>
                 <GatsbyImage image={imageMap[p.image]} alt="" />
-                <div>
+                <div className="col-span-2">
                   <p className="text-lg font-bold">{p.name}</p>
-                  <p className="mb-5">{p.description}</p>
-                  <a href={p.link} className="mt-1 px-3 py-2 bg-first rounded text-white">Vai</a>
+                  <p className="mb-5 prose-a:underline"><ReactMarkdown>{p.description}</ReactMarkdown></p>
+                  <a href={p.link} target="_blank" rel="noreferrer" className="mt-1 px-3 py-2 bg-first rounded text-white">Vai</a>
                 </div>
               </div>
             ))}

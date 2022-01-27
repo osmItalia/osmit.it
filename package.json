@@ -34,6 +34,7 @@
     "react-html-renderer": "^0.3.3",
     "react-leaflet": "^3.2.2",
     "react-leaflet-fullscreen-plugin": "^1.0.1",
+    "react-markdown": "^8.0.0",
     "react-responsive-embed": "^2.1.0"
   },
   "devDependencies": {
