@@ -51,6 +51,7 @@ const IndexPage = ({ data }) => {
             <a className="mx-2" href="#progetti">Strumenti</a>
             <a className="mx-2" href="#contatti">Contatti</a>
             <a className="mx-2" href="https://www.wikimedia.it/news/category/openstreetmap/" target="_blank">News</a>
+            <a className="mx-2" href="https://sostieni.wikimedia.it/diventa_socio_o_rinnova/" target="_blank">Diventa Socio</a>
           </div>
         </div>
       </header>
@@ -129,7 +130,10 @@ const IndexPage = ({ data }) => {
         <section id="contatti">
         <h2 className="text-3xl font-bold mb-2">{config.contactTitle}</h2>
           <hr />
-          <div className="mt-4">
+          <div className="prose lg:prose-lg mt-5 max-w-full mb-5">
+            <HTMLRenderer html={config.contactDescription} />
+          </div>
+          <div>
             <ResponsiveEmbed 
               src="https://openstreetmap.community/?map=44.34666,13.10985&zoom=5.00"
             ></ResponsiveEmbed>
