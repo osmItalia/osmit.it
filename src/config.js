@@ -95,7 +95,7 @@ export default {
         },
     ],
     projectsDescription: '', // supports HTML
-    contactDescription: '', // supports HTML
+    contactDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et eros congue, porta mi ac, tincidunt lectus. Aenean justo libero, vulputate pharetra vestibulum a, viverra non tellus. Nam eget lacus in ligula volutpat efficitur a ut nisi. Integer hendrerit erat vitae posuere viverra.', // supports HTML
     contactTitle: 'Contatti',
     github: {
         url: 'https://github.com/osmItalia/',
