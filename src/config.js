@@ -96,6 +96,7 @@ export default {
     ],
     projectsDescription: '', // supports HTML
     contactDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et eros congue, porta mi ac, tincidunt lectus. Aenean justo libero, vulputate pharetra vestibulum a, viverra non tellus. Nam eget lacus in ligula volutpat efficitur a ut nisi. Integer hendrerit erat vitae posuere viverra.', // supports HTML
+    contactMobileMapAlternative: 'Esempio di testo visibile solo su mobile con <a href="https://google.com">link esterno</a>', // supports HTML
     contactTitle: 'Contatti',
     github: {
         url: 'https://github.com/osmItalia/',
@@ -108,5 +109,33 @@ export default {
     twitter: {
         url: 'https://twitter.com/OpenStreetMapIt',
         text: ''
-    }
+    },
+    navbar: [
+        {
+            title: 'Home',
+            href: '#home',
+        },
+        {
+            title: 'Chi Siamo',
+            href: '#chisiamo',
+        },
+        {
+            title: 'Strumenti',
+            href: '#progetti',
+        },
+        {
+            title: 'Contatti',
+            href: '#contatti',
+        },
+        {
+            title: 'News',
+            href: 'https://www.wikimedia.it/news/category/openstreetmap/',
+            newTab: true,
+        },
+        {
+            title: 'Diventa socio',
+            href: 'https://sostieni.wikimedia.it/diventa_socio_o_rinnova/',
+            newTab: true,
+        }
+    ]
 }
