@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { MapContainer, TileLayer, LayersControl } from 'react-leaflet'
-import Fullscreen from 'react-leaflet-fullscreen-plugin';
+import { FullscreenControl } from "react-leaflet-fullscreen";
+import "react-leaflet-fullscreen/dist/styles.css";
 import * as L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
@@ -32,7 +33,7 @@ export default function Map() {
                     </BaseLayer>))
                 }
                 </LayersControl>
-                <Fullscreen />
+                <FullscreenControl />
             </MapContainer>
         </div>
     )
