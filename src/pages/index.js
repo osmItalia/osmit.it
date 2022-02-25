@@ -28,12 +28,12 @@ const IndexPage = ({ data }) => {
           <div className="flex items-center">
             <StaticImage 
               alt="logo OSM Italia" 
-              src="../images/OSMItaly.svg" 
-              width={50} 
+              src="../images/OSMItaly.png" 
+              width={50}
               height={50} 
               layout="fixed" 
               loading="eager" 
-              placeholder="blurred" 
+              placeholder="blurred"
             />
             <StaticImage 
               loading="eager" 
@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
               loading="eager" 
               alt="" 
               className="mr-5" 
-              src="../images/osm.svg" 
+              src="../images/osm.png" 
               width={50} 
               layout="fixed" 
               placeholder="blurred"
@@ -103,7 +103,7 @@ const IndexPage = ({ data }) => {
             <StaticImage 
               alt="" 
               className="mr-5" 
-              src="../images/OSMItaly.svg" 
+              src="../images/OSMItaly.png" 
               width={50} 
               layout="fixed" 
               placeholder="blurred"
@@ -127,7 +127,7 @@ const IndexPage = ({ data }) => {
             <StaticImage 
               alt="" 
               className="mr-5" 
-              src="../images/osm.svg" 
+              src="../images/osm.png" 
               width={50} 
               layout="fixed"
               placeholder="blurred"
