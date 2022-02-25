@@ -1,22 +1,31 @@
 export default {
+    // title of the website for the meta>title (name that appears in the browser tab)
     siteTitle: 'OSM Italia',
-    headerGradientOverlay: `linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.6))`,
+    // title in the navbar (hidden on mobile)
+    navbarTitle: 'OpenStreetMap Italia',
+    // title of the section about openstreetmap
     osmTitle: 'OpenStreetMap',
+    // text of the section about openstreetmap - supports HTML
     osmDescription: `
         <p><a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) è il più grande database geografico libero e modificabile di tutto il mondo costruito dal lavoro di volontari e rilasciato con una <a href="https://www.openstreetmap.org/copyright">licenza libera</a>. Il cui scopo è creare e fornire dati geografici gratuiti a chiunque li voglia utilizzare. Si tratta di una massiccia collaborazione online, con milioni di utenti registrati in tutto il mondo.</p>
         <p>Scegli il tuo stile di mappa preferito (italiano, escursionismo) cliccando il pulsante all’interno della finestra della mappa (in alto a destra). Gli stili diversi di mappa ti permettono di vedere evidenziate diverse funzionalità in base alla tua preferenza/necessità.</p>
-    `, // supports HTML
+    `,
+    // title of the section about osm ita
     osmItalyTitle: 'La comunità italiana',
+    // text of the section about osm ita - supports HTML
     osmItalyDescription: `
         <p>La comunità italiana è particolarmente attiva non soltanto nel mantenere la mappa di OpenStreetMap aggiornata, ma anche nell'organizzare eventi di formazione, divulgazione e condivisione.<br/>
         La comunità italiana si riunisce annualmente durante il <a href="https://wiki.openstreetmap.org/wiki/IT:OSMit">FOSS4G-IT</a>, conferenza che riunisce tutte le comunità italiane del software geografico libero e dei dati geografici aperti, dove ha a disposizione un’intera giornata dedicata a OpenStreetMap.</p>
         <p><a href="https://www.wikimedia.it/">Wikimedia Italia</a> dal 2016 è il capitolo italiano della <a href="https://wiki.osmfoundation.org/wiki/Main_Page">OpenStreetMap Foundation</a>. Wikimedia Italia supporta ma non controlla il progetto OpenStreetMap incoraggiando la crescita, lo sviluppo e la distribuzione di dati geospaziali liberi usabili e condivisibili da chiunque.</p>
     `,
+    // default center of the map
     center: [41.755, 11.711],
+    // default zoom of the map
     zoom: 6,
+    // layers to display on map
     layers: [
         /* 
-            Only the active layer must be set as `checked: true`
+            NOTE: Only ONE active layer must be set as `checked: true`
             all the others MUST use `checked: false`
         */
         {
@@ -94,22 +103,35 @@ export default {
             description: 'Usa e contribuisci a OSM con il tuo smartphone! Naviga e visualizza le mappe di OSM con [OSMAnd](https://wiki.openstreetmap.org/wiki/OsmAnd). Aggiungi o correggi dati con [Vespucci](https://wiki.openstreetmap.org/wiki/Vespucci), [GoMap!!](https://wiki.openstreetmap.org/wiki/Go_Map!!) e [StreetComplete](https://wiki.openstreetmap.org/wiki/StreetComplete). Queste ed altre app sono descritte nella wikiOSM.',
         },
     ],
-    projectsDescription: '', // supports HTML
-    contactDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et eros congue, porta mi ac, tincidunt lectus. Aenean justo libero, vulputate pharetra vestibulum a, viverra non tellus. Nam eget lacus in ligula volutpat efficitur a ut nisi. Integer hendrerit erat vitae posuere viverra.', // supports HTML
-    contactMobileMapAlternative: 'Esempio di testo visibile solo su mobile con <a href="https://google.com">link esterno</a>', // supports HTML
+    // title of the projects section
+    projectsTitle: 'Strumenti',
+    // text of the section projects - supports HTML
+    projectsDescription: '',
+    // title of the contact us section
     contactTitle: 'Contatti',
+    // text of the section  contact us - supports HTML
+    contactDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et eros congue, porta mi ac, tincidunt lectus. Aenean justo libero, vulputate pharetra vestibulum a, viverra non tellus. Nam eget lacus in ligula volutpat efficitur a ut nisi. Integer hendrerit erat vitae posuere viverra.', // supports HTML
+    // alternative text for contacts map on mobile - supports HTML
+    contactMobileMapAlternative: 'Esempio di testo visibile solo su mobile con <a href="https://google.com">link esterno</a>', // supports HTML
+    // url for the contacts map
+    contactsMap: 'https://openstreetmap.community/?map=44.34666,13.10985&zoom=5.00',
+    // not used
     github: {
         url: 'https://github.com/osmItalia/',
         text: ''
     },
+    // not used
     facebook: {
         url: 'https://it-it.facebook.com/OpenStreetMap.Italia/',
         text: ''
     },
+    // not used
     twitter: {
         url: 'https://twitter.com/OpenStreetMapIt',
         text: ''
     },
+    // configure the navbar for mobile and desktop
+    // use newTab: true to open the link in a new tab
     navbar: [
         {
             title: 'Home',

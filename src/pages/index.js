@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
               layout="fixed" 
               placeholder="blurred"
             />
-            <div className="ml-1 font-bold text-xl hidden md:block">OpenStreetMap Italia</div>
+            <div className="ml-1 font-bold text-xl hidden md:block">{config.navbarTitle}</div>
           </div>
           <div className="ml-auto self-center md:hidden">
             <Menu>
@@ -131,7 +131,7 @@ const IndexPage = ({ data }) => {
               width={50} 
               layout="fixed"
               placeholder="blurred"
-            />Strumenti
+            />{config.projectsTitle}
           </h2>
           <hr />
           <div className="prose lg:prose-lg mt-5 max-w-full mb-5">
@@ -158,7 +158,7 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="md:block hidden">
             <ResponsiveEmbed 
-              src="https://openstreetmap.community/?map=44.34666,13.10985&zoom=5.00"
+              src={config.contactsMap}
             ></ResponsiveEmbed>
           </div>
           <div className="prose lg:prose-lg mt-5 max-w-full mb-5 md:hidden">
