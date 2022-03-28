@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
         className="py-2 border-b-2 sticky top-0 z-[10000] bg-white"
       >
         <div className="max-w-6xl p-2 mx-auto md:p-4 flex">
-          <div className="flex items-center">
+          <a className="flex items-center" href="#home">
             <StaticImage 
               alt="logo OSM Italia" 
               src="../images/OSMItaly.png" 
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
               placeholder="blurred"
             />
             <div className="ml-1 font-bold text-xl hidden md:block">{config.navbarTitle}</div>
-          </div>
+          </a>
           <div className="ml-auto self-center md:hidden">
             <Menu>
               <Menu.Button>
