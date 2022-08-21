@@ -76,7 +76,7 @@ export default {
             image: 'umap',
             name: 'uMap',
             description: 'Crea una mappa in pochi minuti usando i dati di OpenStreetMap',
-            link: 'https://osmit-umap.wmflabs.org/it/',
+            link: 'https://osmit-umap.wmcloud.org/it/',
         },
         {
             image: 'suosm',
