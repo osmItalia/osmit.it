@@ -166,8 +166,11 @@ const IndexPage = ({ data }) => {
           </div>
         </section>
       </main>
-      <footer>
+      <footer className="border-t">
         <div className="max-w-6xl p-2 mx-auto md:p-4 my-5">
+          <div className="flex justify-center">
+            <a href="https://www.wikimedia.it/privacy/" target="_blank">Privacy Policy</a>
+          </div>
         </div>
       </footer>
     </>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://osmit.it/",
     title: "osmit",
   },
   plugins: [
@@ -17,6 +17,14 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '21',
+        matomoUrl: 'https://matomo.wikimedia.it',
+        siteUrl: 'https://osmit.it',
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
