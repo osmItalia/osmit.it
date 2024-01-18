@@ -166,7 +166,7 @@ export default {
         },
         {
             title: 'Diventa socio',
-            href: 'https://sostieni.wikimedia.it/diventa_socio_o_rinnova/',
+            href: 'https://sostieni.wikimedia.it/diventa-socio/',
             newTab: true,
         }
     ]
