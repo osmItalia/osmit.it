@@ -16,7 +16,7 @@ export default {
     osmItalyDescription: `
         <p>La comunità italiana è particolarmente attiva non soltanto nel mantenere la mappa di OpenStreetMap aggiornata, ma anche nell'organizzare eventi di formazione, divulgazione e condivisione.<br/>
         Ogni anno durante il <a href="https://wiki.openstreetmap.org/wiki/IT:OSMit">FOSS4G-IT</a> la comunità italiana si riunisce. La conferenza riunisce tutte le comunità italiane del software geografico libero e dei dati geografici aperti, all'interno del programma un’intera giornata è dedicata ad OpenStreetMap.</p>
-        <p><a href="https://www.wikimedia.it/">Wikimedia Italia</a> dal 2016 è il capitolo italiano della <a href="https://wiki.osmfoundation.org/wiki/Main_Page">OpenStreetMap Foundation</a>. Wikimedia Italia supporta - ma non controlla - il progetto OpenStreetMap, incoraggiando la crescita, lo sviluppo e la distribuzione di dati geospaziali liberi usabili e condivisibili da chiunque.</p>
+        <p><a href="https://www.wikimedia.it/">Wikimedia Italia</a> dal 2016 è il capitolo italiano della <a href="https://wiki.osmfoundation.org/wiki/Main_Page">OpenStreetMap Foundation</a>. Wikimedia Italia supporta - ma non controlla - il progetto OpenStreetMap, incoraggiando la crescita, lo sviluppo e la distribuzione di dati geospaziali liberi usabili e condivisibili da chiunque. È possibile sostenere le attività dei volontari di OpenStreetMap in Italia <a href="https://cinquepermille.wikimedia.it/?mtm_campaign=OSM">destinando il 5 per mille a Wikimedia Italia</a>. Scrivi il codice fiscale 94039910156 nella dichiarazione dei redditi.</p>
     `,
     // default center of the map
     center: [41.755, 11.711],
