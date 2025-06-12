@@ -3,6 +3,8 @@ export default {
     siteTitle: 'OpenStreetMap Italia',
     // title in the navbar (hidden on mobile)
     navbarTitle: 'OpenStreetMap Italia',
+    // banner 5xmille
+    banner5X1000: `<h2 style="background-color: rgba(69, 157, 208, 0.79)">Destina il 5x1000 a <a href="https://cinquepermille.wikimedia.it/?mtm_campaign=5x1000_2025&mtm_kwd=osm&mtm_medium=banner" style= "color:black"">Wikimedia Italia</a> con il codice fiscale 94039910156</h2>`,
     // title of the section about openstreetmap
     osmTitle: 'OpenStreetMap',
     // text of the section about openstreetmap - supports HTML
@@ -16,8 +18,10 @@ export default {
     osmItalyDescription: `
         <p>La comunità italiana è particolarmente attiva non soltanto nel mantenere la mappa di OpenStreetMap aggiornata, ma anche nell'organizzare eventi di formazione, divulgazione e condivisione.<br/>
         Ogni anno durante il <a href="https://wiki.openstreetmap.org/wiki/IT:OSMit">FOSS4G-IT</a> la comunità italiana si riunisce. La conferenza riunisce tutte le comunità italiane del software geografico libero e dei dati geografici aperti, all'interno del programma un’intera giornata è dedicata ad OpenStreetMap.</p>
-        <p><a href="https://www.wikimedia.it/">Wikimedia Italia</a> dal 2016 è il capitolo italiano della <a href="https://wiki.osmfoundation.org/wiki/Main_Page">OpenStreetMap Foundation</a>. Wikimedia Italia supporta - ma non controlla - il progetto OpenStreetMap, incoraggiando la crescita, lo sviluppo e la distribuzione di dati geospaziali liberi usabili e condivisibili da chiunque. È possibile sostenere le attività dei volontari di OpenStreetMap in Italia <a href="https://cinquepermille.wikimedia.it/?mtm_campaign=OSM">destinando il 5 per mille a Wikimedia Italia</a>. Scrivi il codice fiscale 94039910156 nella dichiarazione dei redditi.</p>
+        <p><a href="https://www.wikimedia.it/">Wikimedia Italia</a> dal 2016 è il capitolo italiano della <a href="https://wiki.osmfoundation.org/wiki/Main_Page">OpenStreetMap Foundation</a>. Wikimedia Italia supporta - ma non controlla - il progetto OpenStreetMap, incoraggiando la crescita, lo sviluppo e la distribuzione di dati geospaziali liberi usabili e condivisibili da chiunque.</p>
     `,
+    // Text to be used when the banner is not used
+    // È possibile sostenere le attività dei volontari di OpenStreetMap in Italia <a href="https://cinquepermille.wikimedia.it/?mtm_campaign=OSM">destinando il 5 per mille a Wikimedia Italia</a>. Scrivi il codice fiscale 94039910156 nella dichiarazione dei redditi.
     // default center of the map
     center: [41.755, 11.711],
     // default zoom of the map

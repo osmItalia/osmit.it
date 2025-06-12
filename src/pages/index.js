@@ -79,6 +79,11 @@ const IndexPage = ({ data }) => {
         </div>
       </header>
       <main className="max-w-6xl p-2 mx-auto md:p-4">
+        <section className="my-10" id="cinquemille">
+        <h2 className="text-3xl text-center mb-2 font-bold text-white">
+          <HTMLRenderer html={config.banner5X1000} />
+        </h2>
+        </section>
         <section className="my-10" id="home">
           <h2 className="text-3xl flex mb-2 font-bold">
             <StaticImage 
