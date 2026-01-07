@@ -54,6 +54,6 @@ Example:
     link: 'https://learnosm.org/it/',
 }
 ```
-Images for projects must be placed inside `src/images/projects`, you can then reference it using just it's name without the extension.
+Images for projects must be placed inside `src/images/projects`, you can then reference it using just its name without the extension.
 
 **NOTE:** It's recommended to keep the filename simple and without spaces or special characters (replace space with _).
